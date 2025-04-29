@@ -51,8 +51,27 @@ switch (userType) {
 
 console.log("User Category: ", userCategory);
 
-
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated? "Authenticated":"Not authenticated";
 
 console.log("Authentication Status: ", authenticationStatus);
+
+
+let orginizationRank = "Enrolled Member";
+let dietaryServices; 
+
+switch (orginizationRank) {
+    case "Employee":
+        dietaryServices = "Full Access"
+        break;
+    case "Enrolled Member":
+        dietaryServices = "One on One with Dietician";
+        break;
+    case "Subscriber":
+        dietaryServices = "Partial Access";
+        break;
+    default:
+        dietaryServices = "No Access";
+}
+
+console.log("Dietary Status: ", dietaryServices);
